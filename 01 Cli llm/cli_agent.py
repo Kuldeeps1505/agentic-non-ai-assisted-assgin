@@ -2,22 +2,39 @@
 """
 Assignment 01 — Raw LLM Engineering
 
-Covers:
-- HTTP / REST
-- Authentication
-- Messages / roles
-- Generation parameters
-- Streaming / SSE
+A CLI LLM client **without an AI/agent framework**.
+### Covers
+**LLM fundamentals**
+- API architecture
+- HTTP/REST
+- authentication
+- messages/roles
+- tokens
+- context windows
+- generation parameters
+
+**Streaming**
+- SSE
+- chunks
 - TTFT
-- Timeouts
-- Retries with exponential backoff
-- Error handling
-- Logging
-- Latency measurement
-- Environment variables
-- Provider abstraction
-- OpenAI-compatible providers
-- Ollama support
+- streaming vs non-streaming
+
+**Engineering**
+- retries
+- timeouts
+- error handling
+- logging
+- latency measurement
+- environment variables
+
+**Provider abstraction**
+- multiple LLM provide
+- common interface
+- provider-specific differences
+### Result
+You understand what's underneath:
+> OpenAI / Gemini / Groq / Ollama → LangChain → LangGraph → Agents
+rather than treating them as magic.
 
 Run:
     python llm_client.py
